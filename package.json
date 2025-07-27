@@ -1,0 +1,19 @@
+{
+  "name": "placeme-student-accommodation",
+  "version": "1.0.0",
+  "description": "PlaceMe - Student Accommodation System for South Africa",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["student", "accommodation", "housing", "south-africa"],
+  "author": "PlaceMe Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
